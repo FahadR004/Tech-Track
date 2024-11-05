@@ -1,17 +1,36 @@
-export default function Reset() {
+import styles from "./resetstyles.module.css";
+import "./global-auth.css"
+import { Link } from "react-router-dom";
+
+
+const Reset = () => {
     return(
-        <>
-        <main>
-          <form className="form" action="" method="POST">
-            <div className="main_heading">
+      <>
+      <div className={styles["reset-page"]}>
+          <main className={styles.main}>
+              <form className={styles.form} action="" method="POST">
               <h2>RESET PASSWORD</h2>
-            </div>
-            <fieldset>
-              <label id="email-label" for="email">Email<input id="name" type="email" placeholder="Enter your email address" required/></label>
-            </fieldset>
-          <p className="account"><a href="reset.html">Cancel?</a></p>
-          </form>
-        </main>
-        </>
+              <fieldset>
+                  <label className={styles["email-label"]}id="email-label" htmlFor="email">
+                  Email
+                  <input
+                      className={styles["email-input"]}
+                      id="email"
+                      type="email"
+                      placeholder="Enter your email address"
+                      required
+                  />
+                  </label>
+              </fieldset>
+              <button className={styles["reset-btn"]}>Reset</button>
+              <p className={styles["cancek"]}>
+                  <Link to="/login">Cancel?</Link>
+              </p>
+              </form>
+          </main>
+        </div>
+      </>
       )
 } 
+
+export default Reset;

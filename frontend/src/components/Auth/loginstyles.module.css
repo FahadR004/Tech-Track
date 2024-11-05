@@ -1,73 +1,71 @@
 @font-face {
     font-family: Poppins-Bold;
-    src: url(/Poppins/Poppins-Bold.ttf);
-}
-
-@font-face {
-    font-family: Poppins-Regular;
-    src: url(/Poppins/Poppins-Regular.ttf);
-}
-
-@font-face {
-    font-family: Poppins-SemiBold;
-    src: url(/Poppins/Poppins-SemiBold.ttf);
+    src: url(/src/components/Assets/Poppins/Poppins-Bold.ttf);
 }
 
 
 @font-face {
     font-family: Poppins-Medium;
-    src: url(/Poppins/Poppins-Medium.ttf);
+    src: url(/src/components/Assets/Poppins/Poppins-Medium.ttf);
 }
 
 
-body {
-    background-color: #F5F5F5;
-    text-align: center;
-    /* height: 100vh; Ensure the body takes up ful  l height */
-    font-family: Poppins-Regular, Tahoma, sans-serif;
+.login-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
-main {
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 70vh;
 }
 
-form {
-    max-width: 400px;
+.form {
+    max-width: 450px;
     min-width: 300px;
     width: 60vw;
-    margin: 0 0 5px 0; /* Remove the margin to allow centering */
+    margin: 0 0 8px 0;
     padding: 20px 15px 20px 10px;
     background-color: #ffffff;
     box-shadow: 20px 10px 5px #d3d6d9;
     border: 1px solid black;
-    border-radius: 32px
-  }
-  
-fieldset {
-    border: 0px;
-    margin: 0.1rem;
-
+    border-radius: 32px;
 }
 
-h2 {
+.main-heading {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.2);
+}
+
+.logo {
+    width: 20%;
+}
+
+.h2 {
     letter-spacing: 3px;
 }
 
-input, label {
+.email-input, .password-input, .email-label, .password-label{
     display: block;
     width: 100%;
     margin: 10px 0 5px 0;
     text-align: left;
 }
 
-input {
+.email-input, .password-input{
     padding: 5px;
     border: 1px solid #F5F5F5;
     padding: 13px 5px;
     border-radius: 10px;
-    color: #C4C4C4;
     font-family: Poppins-Medium, Tahoma, sans-serif;
 }
 
@@ -80,4 +78,5 @@ button {
     font-family: Poppins-Bold, Tahoma, sans-serif;
     box-shadow: 2px 1px 5px #d3d6d9;
     letter-spacing: 1px;
+    font-weight: bold;
 }

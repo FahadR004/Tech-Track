@@ -1,23 +1,57 @@
-export default function Login() {
-    return(
-        <>
-        <h1>Welcome back!</h1>
-        <main>
-          <form className="form" action="" method="POST">
-            <div className="main_heading">
-              <h2>LOGIN PAGE</h2>
-              <p className="account">Don't have an account? <a href="login.html">Sign up</a></p>
+import styles from "./loginstyles.module.css";
+import image from "../Assets/tech-track.png";
+import "./global-auth.css"
+import { Link } from "react-router-dom";
+
+const Login = () => {
+  return ( 
+    <>
+    <div className={styles["login-page"]}>
+        <div className={styles["main-heading"]}>
+            <h1>Welcome to</h1>
+            <img className={styles.logo} src={image} alt="Tech Track" />
+        </div>
+        <main className={styles.main}>
+            <form className={styles.form} action="" method="POST">
+            <div className={styles["main_heading"]}>
+                <h2>LOGIN PAGE</h2>
             </div>
+            <p className={styles.account}>
+                Don't have an account? <Link to="/signup">Sign-up</Link>
+            </p>
             <fieldset>
-              <label id="email-label" for="email">Email<input id="name" type="email" placeholder="Enter your email address" required/></label>
+                <label className={styles["email-label"]}id="email-label" htmlFor="email">
+                Email
+                <input
+                    className={styles["email-input"]}
+                    id="email"
+                    type="email"
+                    placeholder="Enter your email address"
+                    required
+                />
+                </label>
             </fieldset>
             <fieldset>
-              <label id="password-label" for="password">Password<input id="password" type="password" placeholder="Enter your password" required/></label>
+                <label className={styles["password-label"]} id="password-label" htmlFor="password">
+                Password
+                <input
+                    className={styles["password-input"]}
+                    id="password"
+                    type="password"
+                    placeholder="Enter your password"
+                    required
+                />
+                </label>
             </fieldset>
-            <button className="register">Sign in</button>
-          <p className="account">Forgot Password? <a href="reset.html">Reset</a></p>
-          </form>
+            <button className={styles["login-btn"]}>Login</button>
+            <p className={styles["reset-password"]}>
+                Forgot Password? <Link to="/reset">Reset it</Link>
+            </p>
+            </form>
         </main>
-        </>
-      )
-} 
+      </div>
+    </>
+   );
+}
+ 
+export default Login;
