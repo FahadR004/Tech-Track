@@ -7,9 +7,8 @@ import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <>
-      <div className={styles["signup-page"]}>
+      <body className={styles["signup-page"]}>
         <div className={styles["main-heading"]}>
-            <h1>Welcome to</h1>
             <img className={styles.logo} src={image} alt="Tech Track" />
         </div>
         <main className={styles.main}>
@@ -65,13 +64,13 @@ const Login = () => {
                 />
                 </label>
             </fieldset>
-            <button className={styles.register}>Register</button>
+            <button className={styles["register-btn"]}>Register</button>
             <p className={styles.account}>
-                Already have an account? <Link to="/login">Login</Link>
+                Already have an account? <Link to="/">Login</Link>
             </p>
             </form>
         </main>
-      </div>
+      </body>
     </>
   );
 };

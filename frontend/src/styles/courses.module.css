@@ -1,0 +1,31 @@
+.courses-page {
+    background-color: #17152F;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.mid-section h1 {
+    padding: 25px 36px 0px 36px;
+    font-size: 50px;
+    color: #2AD7BA;
+    font-weight: bold;
+    text-shadow: 8px 7px 5px #0d0c1a;
+    margin-bottom: 10px;
+}
+
+.courses-input {
+    margin-left: 40px;
+    width: 50%;
+    padding: 13px 20px;
+    border-radius: 40px;
+    font-family: Poppins-Medium, Tahoma, sans-serif;
+    border: none;
+    font-size: large;
+    box-shadow: 10px 11px 5px #0d0c1a;;
+}
+
+.courses-input:focus {
+    outline: none;
+    border: none;
+}

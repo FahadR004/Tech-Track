@@ -8,16 +8,26 @@
     src: url(/src/components/Assets/Poppins/Poppins-Medium.ttf);
 }
 
-.main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(/src/components/Assets/Poppins/Poppins-Regular.ttf);
 }
 
+.signup-page {
+    background-color: #F5F5F5;
+    font-family: Poppins-Regular, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
 .form {
-    max-width: 450px;
-    min-width: 300px;
-    width: 60vw;
+    max-width: 600px;
+    min-width: 500px;
     margin: 0 0 8px 0;
     padding: 20px 15px 20px 10px;
     background-color: #ffffff;
@@ -26,16 +36,9 @@
     border-radius: 32px;
 }
 
-.main-heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: scale(1.2);
-}
 
 .logo {
-    height: 20%;
-    width: 20%;
+    width: 300px;
 }
 
 .h2 {
@@ -57,7 +60,7 @@
     font-family: Poppins-Medium, Tahoma, sans-serif;
 }
 
-.register {
+.register-btn {
     background-color: #00000C;
     color: #FFFFFF;
     padding: 7px 15px;
@@ -67,4 +70,8 @@
     box-shadow: 2px 1px 5px #d3d6d9;
     letter-spacing: 1px;
     font-weight: bold;
+}
+
+.register-btn:hover {
+    cursor: pointer;
 }

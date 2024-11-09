@@ -23,8 +23,8 @@ const Reset = () => {
                   </label>
               </fieldset>
               <button className={styles["reset-btn"]}>Reset</button>
-              <p className={styles["cancek"]}>
-                  <Link to="/login">Cancel?</Link>
+              <p className={styles["cancel"]}>
+                  <Link to="/">Cancel?</Link>
               </p>
               </form>
           </main>

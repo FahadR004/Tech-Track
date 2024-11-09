@@ -1,0 +1,58 @@
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(/src/components/Assets/Poppins/Poppins-Medium.ttf);
+}
+
+.ul {
+    padding: 0px 12px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background-color: #17152F;
+    color: white;
+    font-family: Poppins-Medium;
+    font-size: larger;
+    box-shadow: 1px 5px 5px #0d0c1a;
+}   
+
+
+.homepage, .roadmap, .courses {
+    text-decoration: none;
+    color: white;
+    text-shadow: 8px 7px 5px #0d0c1a;
+}
+
+.logout-link {
+    text-decoration: none;
+    margin-left: auto;
+    
+}
+
+
+.logout {
+    font-weight: bold;
+    font-family: Poppins-Regular;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: 0px;
+    border-radius: 2px;
+    color: #23af97}
+
+.logout:hover {
+    background-color: rgb(214, 212, 212);
+    cursor: pointer;
+    border: 0px;
+}
+
+
+
+.logo {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.homepage:hover, .roadmap:hover, .courses:hover{
+    color: rgb(214, 212, 212);
+    cursor: pointer;
+}
+

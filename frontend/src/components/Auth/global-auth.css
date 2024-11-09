@@ -1,13 +1,8 @@
-@font-face {
-    font-family: Poppins-Regular;
-    src: url(/src/components/Assets/Poppins/Poppins-Regular.ttf);
-}
-
 
 body {
-    background-color: #F5F5F5;
     text-align: center;
     font-family: Poppins-Regular, Tahoma, sans-serif;
+    margin: 0px;
 }
 
 fieldset {

@@ -3,6 +3,11 @@
     src: url(/src/components/Assets/Poppins/Poppins-Bold.ttf);
 }
 
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(/src/components/Assets/Poppins/Poppins-Regular.ttf);
+}
+
 
 @font-face {
     font-family: Poppins-Medium;
@@ -14,6 +19,8 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #F5F5F5;
+    font-family: Poppins-Regular, sans-serif;
 }
 
 
@@ -77,4 +84,8 @@
     box-shadow: 2px 1px 5px #d3d6d9;
     letter-spacing: 1px;
     font-weight: bold;
+}
+
+.reset-btn:hover {
+    cursor: pointer;
 }

@@ -8,7 +8,6 @@ const Login = () => {
     <>
     <div className={styles["login-page"]}>
         <div className={styles["main-heading"]}>
-            <h1>Welcome to</h1>
             <img className={styles.logo} src={image} alt="Tech Track" />
         </div>
         <main className={styles.main}>
